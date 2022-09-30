@@ -12,7 +12,7 @@ class Register_File extends FreeSpec with ChiselScalatestTester{
     c.io.regWrite.poke(1.U)
     c.io.writeData.poke(10.S)
     c.io.rd_sel.poke(3.U)
-    c.clock.step(1)
+    c.clock.step(100)
     c.io.rs2.expect(10.S)    
     // step(1)
 }}}
