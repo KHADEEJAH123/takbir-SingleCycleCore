@@ -4,10 +4,10 @@
 </div>
 <br>
 \
-![alt text](https://github.com/merledu/RISC-V-single-cycle-core/blob/master/Single%20Cycle%20RISC-V%20Core.PNG)
-\
-\
-First of all get started by cloning this repository on your machine.  
+<img src='Single Cycle RISC-V Core.png'>
+<br>
+First of all get started by cloning this repository on your machine.
+ 
 ```ruby
 git clone https://github.com/KHADEEJAH123/SINGLE-CYCLE.git
 ```
