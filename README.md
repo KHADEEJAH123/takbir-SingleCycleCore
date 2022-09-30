@@ -1,5 +1,5 @@
 <div align='center'><img src="https://readme-typing-svg.demolab.com?font=Arial&size=22&pause=1000&color=F7F7F7&multiline=true&width=435&lines=RISC-V+Single+Cycle+Core" alt="Typing SVG" /><br>
-
+<img src="https://readme-typing-svg.demolab.com?font=Arial&size=18&pause=1000&color=F7F7F7&multiline=true&width=435&lines=Designed+by+KHADEEJAH+ASHRAF" alt="Typing SVG" />
 </div>
 <br>
 
