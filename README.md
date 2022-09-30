@@ -3,7 +3,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=Arial&size=18&pause=1000&color=F7F7F7&multiline=true&width=435&lines=Designed+by+Khadeejah+Ashraf" alt="Typing SVG" />
 </div>
 <br>
-\
+
 <img src='Single Cycle RISC-V Core.png'>
 <br>
 First of all get started by cloning this repository on your machine.
@@ -51,7 +51,7 @@ sbt:SINGLE-CYCLE>
 ```
 Enter this command
 ```ruby
-sbt:SINGLE-CYCLEi> test:runMain datapath.Launcher Top
+sbt:SINGLE-CYCLE> test:runMain datapath.Launcher Top
 ```
 After you get success
 ```ruby
