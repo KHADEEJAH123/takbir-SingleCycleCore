@@ -9,7 +9,7 @@
 First of all get started by cloning this repository on your machine.
  
 ```ruby
-git clone https://github.com/KHADEEJAH123/SINGLE-CYCLE.git
+git clone https://github.com/KHADEEJAH123/takbir-SingleCycleCore.git
 ```
 Create a .txt file and place the ***hexadecimal*** code of your instructions simulated on ***Venus*** (RISC-V Simulator)\
 Each instruction's hexadecimal code must be on seperate line as following. This program consists of 9 instructions.
@@ -26,7 +26,7 @@ Each instruction's hexadecimal code must be on seperate line as following. This 
 ```
 Then perform the following step
 ```ruby
-cd SINGLE-CYCLE/src/main/Singlecycle/
+cd takbir-SingleCycleCore/src/main/Singlecycle/
 ```
 Open **InstructionMem.scala** with this command. You can also manually go into the above path and open the file in your favorite text editor.
 ```ruby
@@ -34,12 +34,12 @@ open InstructionMem.scala
 ```
 Find the following line
 ``` python
-loadMemoryFromFile(mem, "SINGLE-CYCLE/src/main/Singlecycle/mem1.txt")
+loadMemoryFromFile(mem, "takbir-SingleCycleCore/src/main/Singlecycle/mem1.txt")
 ```
 Change the .txt file path to match your file that you created above storing your own program instructions.\
-After setting up the InstructionMem.scala file, go inside the SINGLE-CYCLE folder.
+After setting up the InstructionMem.scala file, go inside the takbir-SingleCycleCore folder.
 ```ruby
-cd root/SINGLE-CYCLE
+cd root/takbir-SingleCycleCore
 ```
 And enter
 ```ruby
@@ -47,15 +47,15 @@ sbt
 ```
 When the terminal changes to this type
 ```ruby
-sbt:SINGLE-CYCLE>
+sbt:takbir-SingleCycleCore>
 ```
 Enter this command
 ```ruby
-sbt:SINGLE-CYCLE> test:runMain datapath.Launcher Top
+sbt:takbir-SingleCycleCore> test:runMain datapath.Launcher Top
 ```
 After you get success
 ```ruby
-sbt:SINGLE-CYCLE> test:runMain datapath.Launcher Top --backend-name verilator
+sbt:takbir-SingleCycleCore> test:runMain datapath.Launcher Top --backend-name verilator
 ```
 After success you will get a folder ***test_run_dir*** on root of your folder. Go into the examples folder inside.\
 There you will find the folder named Top. Enter in it and you can find the Top.vcd file which you visualise on **gtkwave** to\
