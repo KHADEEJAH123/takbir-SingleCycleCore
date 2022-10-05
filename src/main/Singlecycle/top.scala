@@ -1,5 +1,4 @@
 package Singlecycle
-
 import chisel3._
 
 class Top extends Module {
@@ -18,8 +17,7 @@ class Top extends Module {
     val imem = Module(new InstructionMem())
     val dmem = Module(new DataMem())
 
-    // Initializing Instruction Memory and PC inputs
-    // imem.io.wrAddr := pc.io.out(11,2)
+    
     imem.io.wrAddr := pc.io.out(11,2).asUInt
     val instruction = imem.io.readData
     pc.io.in := pc.io.pc4
@@ -82,7 +80,7 @@ class Top extends Module {
             pc.io.in := pc.io.pc4
         }
     } .elsewhen(control.io.out_next_pc_sel === "b10".U) {
-        pc.io.in := imm_generation.io.uj_imm + pc.io.out
+        pc.io.in := imm_generation.io.uj_imm+ pc.io.out
     } .elsewhen(control.io.out_next_pc_sel === "b11".U) {
         pc.io.in := jalr.io.output
     } .otherwise {
