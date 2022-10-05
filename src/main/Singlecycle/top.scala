@@ -82,7 +82,7 @@ class Top extends Module {
             pc.io.in := pc.io.pc4
         }
     } .elsewhen(control.io.out_next_pc_sel === "b10".U) {
-        pc.io.in := imm_generation.io.uj_imm
+        pc.io.in := imm_generation.io.uj_imm + pc.io.out
     } .elsewhen(control.io.out_next_pc_sel === "b11".U) {
         pc.io.in := jalr.io.output
     } .otherwise {
