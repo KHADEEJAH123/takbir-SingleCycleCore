@@ -17,7 +17,7 @@ class TOP_TESTS extends FreeSpec with ChiselScalatestTester{
 //     c.io.instruction_step.poke(16.U)
 //     c.clock.step(1)
 //     // step(1)
-   c.clock.step(600)
+   c.clock.step(50)
 
      }}}
   
